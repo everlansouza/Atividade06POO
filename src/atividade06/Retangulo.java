@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade06;
 
-/**
- *
- * @author everl
- */
-public class Retangulo {
+public class Retangulo extends FormaGeometrica{
+
+    private final double base, altura;
     
+    public Retangulo(double base, double altura, int x, int y, Cor borda, Cor preench){
+        super(x, y, borda, preench);
+        this.altura = altura;
+        this.base = base;
+    }
+    
+    @Override
+    public double calcArea(){
+        double area;
+        area = base * altura;
+        return area;
+    }
+    
+    @Override
+    public double calcPerimetro(){
+        double perimetro;
+        perimetro = (2 * base) + (2* altura);
+        return perimetro;
+    }
 }
