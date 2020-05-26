@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade06;
 
-/**
- *
- * @author everl
- */
-public class Quadrado {
+public class Quadrado extends FormaGeometrica{
     
+    private final double lado;
+    
+    public Quadrado(double lado, int x, int y, Cor borda, Cor preench){
+        super(x, y, borda, preench);
+        this.lado = lado;
+    }
+    
+    @Override
+    public double calcArea(){
+        double area;
+        area = lado * lado;
+        return area;
+    }
+    
+    @Override
+    public double calcPerimetro(){
+        double perimetro;
+        perimetro = 4 * lado;
+        return perimetro;
+    }
 }

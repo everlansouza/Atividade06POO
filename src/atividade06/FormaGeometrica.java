@@ -14,5 +14,5 @@ public abstract class FormaGeometrica {
     
     public abstract double calcArea();
     
-    public abstract double calcperimetro();
+    public abstract double calcPerimetro();
 }
