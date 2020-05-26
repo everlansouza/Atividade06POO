@@ -4,8 +4,8 @@ public class Quadrado extends FormaGeometrica{
     
     private final double lado;
     
-    public Quadrado(double lado, int x, int y, Cor borda, Cor preench){
-        super(x, y, borda, preench);
+    public Quadrado(double lado, Cor borda, Cor preench){
+        super(borda, preench);
         this.lado = lado;
     }
     

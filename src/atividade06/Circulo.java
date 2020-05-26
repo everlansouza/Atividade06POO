@@ -4,8 +4,8 @@ public class Circulo extends FormaGeometrica{
     
     private final double raio, pi = 3.1416;
     
-    public Circulo(double raio, int x, int y, Cor borda, Cor preench){
-        super(x, y, borda, preench);
+    public Circulo(double raio, Cor borda, Cor preench){
+        super(borda, preench);
         this.raio = raio;
     }
     

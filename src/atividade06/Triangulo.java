@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade06;
 
-/**
- *
- * @author everl
- */
-public class Triangulo {
+public class Triangulo extends FormaGeometrica{
+
+    private final double base, altura;
     
+    public Triangulo(double base, double altura, Cor borda, Cor preench){
+        super(borda, preench);
+        this.altura = altura;
+        this.base = base;
+    }
+    
+    @Override
+    public double calcArea(){
+        double area;
+        area = base * altura / 2;
+        return area;
+    }
+    
+    @Override
+    public double calcPerimetro(){
+        double perimetro;
+        perimetro = base * 3;
+        return perimetro;
+    }
 }

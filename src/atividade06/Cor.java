@@ -9,4 +9,6 @@ public class Cor {
         this.g = g;
         this.b = b;
     }
+    
+    
 }

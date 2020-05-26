@@ -12,6 +12,11 @@ public abstract class FormaGeometrica {
         this.preench = preench;
     }
     
+    public FormaGeometrica(Cor borda, Cor preench){
+        this.borda = borda;
+        this.preench = preench;
+    }
+    
     public abstract double calcArea();
     
     public abstract double calcPerimetro();

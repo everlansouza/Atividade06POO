@@ -4,8 +4,8 @@ public class Retangulo extends FormaGeometrica{
 
     private final double base, altura;
     
-    public Retangulo(double base, double altura, int x, int y, Cor borda, Cor preench){
-        super(x, y, borda, preench);
+    public Retangulo(double base, double altura, Cor borda, Cor preench){
+        super( borda, preench);
         this.altura = altura;
         this.base = base;
     }
