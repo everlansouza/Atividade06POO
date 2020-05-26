@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade06;
 
-/**
- *
- * @author everl
- */
-public class FormaGeometrica {
+public abstract class FormaGeometrica {
     
+    protected int x, y ;
+    protected Cor borda, preench;
+    
+    public FormaGeometrica(int x, int y, Cor borda, Cor preench){
+        this.x = x;
+        this.y = y;
+        this.borda = borda;
+        this.preench = preench;
+    }
+    
+    public abstract double calcArea();
+    
+    public abstract double calcperimetro();
 }
