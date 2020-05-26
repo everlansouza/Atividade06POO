@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade06;
 
-/**
- *
- * @author everl
- */
-public class Circulo {
+public class Circulo extends FormaGeometrica{
     
+    private final double raio, pi = 3.1416;
+    
+    public Circulo(double raio, int x, int y, Cor borda, Cor preench){
+        super(x, y, borda, preench);
+        this.raio = raio;
+    }
+    
+    @Override
+    public double calcArea(){
+        double area;
+        area = Math.pow(raio, 2) * pi;
+        return area;
+    }
+    
+    @Override
+    public double calcPerimetro(){
+        double perimetro;
+        perimetro = 2 * pi * raio;
+        return perimetro;
+    }
 }
